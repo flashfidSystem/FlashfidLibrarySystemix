@@ -1,5 +1,15 @@
 ﻿<%@ Page Title="Darshbord" Language="C#" MasterPageFile="~/ProfileMaster/Site1.Master" AutoEventWireup="true" CodeBehind="DarshBoards.aspx.cs" Inherits="LibrarySystem.Accounts.DarshBoards" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            width: 51px;
+            height: 41px;
+            background-image: url('../csss/images/city.jpg');
+            background-position: center;
+            background-size: cover;
+            transition: all .5s;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   
@@ -99,7 +109,7 @@
                                <asp:Label ID="Label1" runat="server" Text="#" Font-Bold="True" ForeColor="#009999" Font-Size="X-Large"></asp:Label>
 
                                                  </span>
-                       <asp:Label CssClass="p-4"  ID="lbltotalAmount" runat="server" Text="0000" Font-Bold="True" Font-Size="XX-Large" ForeColor="#006666"></asp:Label>
+                       <asp:Label CssClass="p-4"  ID="lbltotalAmount" runat="server" Text="0000" Font-Bold="True" Font-Size="XX-Large" ForeColor="#006666" ToolTip="Amount per naira"></asp:Label>
  
                              <img  class="child" src="../imgs/coinsoooo.png" width="30px" height="50px" />
                                 
@@ -117,7 +127,7 @@
                            <h5>Unreturm Books</h5>
                        <asp:Label CssClass="p-4"  ID="lblUnreturn" runat="server" Text="0" Font-Bold="True" Font-Size="XX-Large" ForeColor="White"></asp:Label>
                              
-                             <img  class="child" src="../imgs/ajax-loader.gif" width="30px" height="50px" />
+                             <img  class="auto-style1" src="../imgs/icons8-return-book-64.png" />
                                 
                              </asp:Panel>         
                 </div>
@@ -147,7 +157,7 @@
   <div class="container">
       <div class="row">
           <div class="col-md-10">
-              <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/imgs/icons8-refund-64.png" OnClick="ImageButton1_Click" Width="58px"></asp:ImageButton>
+              <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/imgs/icons8-refund-64.png" OnClick="ImageButton1_Click" Width="58px" ToolTip="Clear total amounts"></asp:ImageButton>
           </div>
       </div>
   </div>
