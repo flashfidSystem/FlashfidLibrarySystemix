@@ -1,15 +1,6 @@
 ﻿<%@ Page Title="Darshbord" Language="C#" MasterPageFile="~/ProfileMaster/Site1.Master" AutoEventWireup="true" CodeBehind="DarshBoards.aspx.cs" Inherits="LibrarySystem.Accounts.DarshBoards" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .auto-style1 {
-            width: 51px;
-            height: 41px;
-            background-image: url('../csss/images/city.jpg');
-            background-position: center;
-            background-size: cover;
-            transition: all .5s;
-        }
-    </style>
+  
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   
